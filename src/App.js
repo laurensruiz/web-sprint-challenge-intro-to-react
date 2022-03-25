@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-import Character from './components/Character'
+import Character from './components/Character';
+
 
 
 const App = () => {
@@ -12,14 +13,14 @@ const App = () => {
   // sync up with, if any.
 
   const [characters, setCharacters] = useState([]);
-  const [currentCharacter, setCurrentCharacter] = useState([])
+  const [currentId, setCurrentId] = useState([])
 
   const openDetails = id => {
-    setCurrentCharacter(id)
+    setCurrentId(id)
   }
 
   const closeDetails = () => {
-    setCurrentCharacter(null)
+    setCurrentId(null)
   }
 
   useEffect(() => {
@@ -36,6 +37,12 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
+      {
+        characters.map((character) => {
+          return <Character info={character} action={openDetails} />
+        })
+      }
+      
     </div>
   );
 }
