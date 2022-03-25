@@ -5,7 +5,6 @@ import styled, { keyframes } from 'styled-components';
 
 const Styled = styled.div`
 background-color: white;
-background-opacity: 50%;
 `
 export default function Details(props) {
     const {info, className} = props
