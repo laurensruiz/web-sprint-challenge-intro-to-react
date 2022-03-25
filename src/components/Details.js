@@ -4,9 +4,8 @@ import styled, { keyframes } from 'styled-components';
 
 
 const Styled = styled.div`
-.element-visible { display: block }
-.element-hidden { display: none }
-
+background-color: white;
+background-opacity: 50%;
 `
 export default function Details(props) {
     const {info, className} = props
@@ -15,7 +14,9 @@ export default function Details(props) {
 
     return (
         <Styled className={className}>
-        <p>{info.gender}</p>
+            <p></p>
+            <p>Gender: {info.gender}</p>
+            <p></p>
         </Styled>
     )
 }
