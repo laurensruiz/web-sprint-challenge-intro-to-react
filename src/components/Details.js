@@ -11,6 +11,7 @@ padding: 0.25%;
 font-size: 50%;
 
 `
+
 export default function Details(props) {
     const {info, className} = props
    
