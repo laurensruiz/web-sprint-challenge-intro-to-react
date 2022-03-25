@@ -16,9 +16,9 @@ const App = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    axios.get(`https://swapi.dev/api/people`)
+    axios.get(`https://swapi.dev/api/people/`)
       .then(res => {
-        setCharacters(res.data.results)
+        setCharacters(res.data)
         
       })
       .catch(err => {
