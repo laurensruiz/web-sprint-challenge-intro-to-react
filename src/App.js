@@ -25,7 +25,7 @@ const App = () => {
         console.log(err)
       })
   }, [])
-
+  
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
@@ -37,6 +37,7 @@ const App = () => {
 
     </div>
   );
+  
 }
 
 export default App;

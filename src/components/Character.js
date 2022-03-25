@@ -5,6 +5,19 @@ import Details from "./Details";
 import styles from "styled-components"
 
 const Styled = styled.div`
+background-color: rgba(255, 255, 255, 0.52);
+width: 70%;
+margin: 0 auto;
+font-size: 200%;
+
+button {
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+h1 {
+    padding:2%;
+}
 .element-visible { 
     display: block }
 .element-hidden { 
